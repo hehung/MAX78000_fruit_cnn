@@ -1,0 +1,3 @@
+#!/bin/sh
+python train.py --epochs 600  --optimizer Adam --lr 0.001 --wd 0.001 --batch-size 240 --gpus 0 --deterministic --compress policies/schedule-fruit.yaml --model ai85net_fruit --dataset fruit --param-hist --pr-curves --embedding --device MAX78000 "$@"
+# python train.py --epochs 250 --optimizer Adam --lr 0.001 --wd 0 --deterministic --compress policies/schedule-catsdogs.yaml --model ai85cdnet --dataset fruit --confusion --param-hist --embedding --device MAX78000 "$@"

@@ -1,0 +1,51 @@
+2023-01-14 21:43:09,990 - Log file for this run: /home/hehung/AI/ai8x-training/logs/2023.01.14-214309/2023.01.14-214309.log
+2023-01-14 21:43:23,367 - => loading checkpoint ../ai8x-synthesis/trained/ai8x-fruit-qat8-q.pth.tar
+2023-01-14 21:43:23,406 - => Checkpoint contents:
++----------------------+-------------+---------------+
+| Key                  | Type        | Value         |
+|----------------------+-------------+---------------|
+| arch                 | str         | ai85net_fruit |
+| compression_sched    | dict        |               |
+| epoch                | int         | 592           |
+| extras               | dict        |               |
+| optimizer_state_dict | dict        |               |
+| optimizer_type       | type        | Adam          |
+| state_dict           | OrderedDict |               |
++----------------------+-------------+---------------+
+
+2023-01-14 21:43:23,408 - => Checkpoint['extras'] contents:
++-----------------+--------+-------------------+
+| Key             | Type   | Value             |
+|-----------------+--------+-------------------|
+| best_epoch      | int    | 592               |
+| best_mAP        | int    | 0                 |
+| best_top1       | float  | 99.00990099009901 |
+| clipping_method | str    | MAX_BIT_SHIFT     |
+| current_mAP     | int    | 0                 |
+| current_top1    | float  | 99.00990099009901 |
++-----------------+--------+-------------------+
+
+2023-01-14 21:43:23,423 - Loaded compression schedule from checkpoint (epoch 592)
+2023-01-14 21:43:23,473 - => loaded 'state_dict' from checkpoint '../ai8x-synthesis/trained/ai8x-fruit-qat8-q.pth.tar'
+2023-01-14 21:43:23,524 - Optimizer Type: <class 'torch.optim.sgd.SGD'>
+2023-01-14 21:43:23,525 - Optimizer Args: {'lr': 0.1, 'momentum': 0.9, 'dampening': 0, 'weight_decay': 0.0001, 'nesterov': False}
+2023-01-14 21:43:23,715 - Dataset sizes:
+	training=912
+	validation=101
+	test=80
+2023-01-14 21:43:23,716 - --- test ---------------------
+2023-01-14 21:43:23,722 - 80 samples (256 per mini-batch)
+2023-01-14 21:43:26,112 - Test: [    1/    1]    Loss 0.269949    Top1 92.500000    Top5 100.000000    
+2023-01-14 21:43:26,178 - ==> Top1: 92.500    Top5: 100.000    Loss: 0.270
+
+2023-01-14 21:43:26,179 - ==> Confusion:
+[[15  0  0  0  1  0  0]
+ [ 0 10  0  0  0  0  0]
+ [ 0  0 13  0  0  0  2]
+ [ 0  0  0 12  0  0  0]
+ [ 1  0  0  1 10  0  0]
+ [ 0  0  1  0  0  5  0]
+ [ 0  0  0  0  0  0  9]]
+
+2023-01-14 21:43:26,185 - 
+2023-01-14 21:43:26,186 - Log file for this run: /home/hehung/AI/ai8x-training/logs/2023.01.14-214309/2023.01.14-214309.log

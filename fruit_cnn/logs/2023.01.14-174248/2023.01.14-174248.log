@@ -1,0 +1,39 @@
+2023-01-14 17:42:48,233 - Log file for this run: /home/hehung/AI/ai8x-training/logs/2023.01.14-174248/2023.01.14-174248.log
+2023-01-14 17:43:00,880 - => loading checkpoint ../ai8x-synthesis/trained/ai8x-fruit-qat8-q.pth.tar
+2023-01-14 17:43:01,118 - => Checkpoint contents:
++----------------------+-------------+---------------+
+| Key                  | Type        | Value         |
+|----------------------+-------------+---------------|
+| arch                 | str         | ai85net_fruit |
+| compression_sched    | dict        |               |
+| epoch                | int         | 583           |
+| extras               | dict        |               |
+| optimizer_state_dict | dict        |               |
+| optimizer_type       | type        | Adam          |
+| state_dict           | OrderedDict |               |
++----------------------+-------------+---------------+
+
+2023-01-14 17:43:01,122 - => Checkpoint['extras'] contents:
++-----------------+--------+-------------------+
+| Key             | Type   | Value             |
+|-----------------+--------+-------------------|
+| best_epoch      | int    | 583               |
+| best_mAP        | int    | 0                 |
+| best_top1       | float  | 91.21621621621621 |
+| clipping_method | str    | MAX_BIT_SHIFT     |
+| current_mAP     | int    | 0                 |
+| current_top1    | float  | 91.21621621621621 |
++-----------------+--------+-------------------+
+
+2023-01-14 17:43:01,189 - Loaded compression schedule from checkpoint (epoch 583)
+2023-01-14 17:43:01,380 - => loaded 'state_dict' from checkpoint '../ai8x-synthesis/trained/ai8x-fruit-qat8-q.pth.tar'
+2023-01-14 17:43:01,531 - Optimizer Type: <class 'torch.optim.sgd.SGD'>
+2023-01-14 17:43:01,531 - Optimizer Args: {'lr': 0.1, 'momentum': 0.9, 'dampening': 0, 'weight_decay': 0.0001, 'nesterov': False}
+2023-01-14 17:43:01,652 - Dataset sizes:
+	training=1338
+	validation=148
+	test=114
+2023-01-14 17:43:01,653 - --- test ---------------------
+2023-01-14 17:43:01,657 - 114 samples (256 per mini-batch)
+2023-01-14 17:43:03,884 - 
+2023-01-14 17:43:03,884 - Log file for this run: /home/hehung/AI/ai8x-training/logs/2023.01.14-174248/2023.01.14-174248.log
