@@ -672,9 +672,12 @@ python ./ai8xize.py --verbose --test-dir demos --prefix ai8x-fruit --checkpoint-
 # 可编译下载的代码（放在项目的附件，用于验证）
 项目实现的所有文件都放在了gitee。    
 包括数据集，模型代码，项目工程以及训练量化过程中的logs等。   
-gitee地址：https://gitee.com/hehung/max78000_fruit_cnn
+本仓库可以下载，也可以在百度云下载：
+链接：https://pan.baidu.com/s/1B8k7zRZFdufAWi-wYxCFyA?pwd=6mwv 
+提取码：6mwv 
+复制这段内容后打开百度网盘手机App，操作更方便哦
   
-gitee文件目录说明：
+文件目录说明：
 ![](./images/9999.jpg)
 
 # 总结
